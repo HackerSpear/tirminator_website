@@ -4,4 +4,4 @@ DriverR-Website and landing page
 
 Technologies 
 
-PHP version 8 
+PHP version 8.1
