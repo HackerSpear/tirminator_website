@@ -14,7 +14,7 @@ RUN apt-get update && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Copy your project files to the web root directory
-COPY ./src /usr/share/nginx/html
+COPY ./src /var/www/html
 
 # Configure Nginx
 COPY ./default.conf /etc/nginx/conf.d/default.conf
