@@ -30,14 +30,17 @@ p {
     max-width: 1280px !important;
 }
 .container-sm {
-    max-width: 1140px !important;
+    max-width: 1199px !important;
+}
+.container-lg {
+    max-width: 1340px !important;
 }
 .pt-50 {
     padding-top: 50px;
 }
 .mx-615 {
     width: 100%;
-    max-width: 615px;
+    max-width: 450px;
 }
 .w-249 {
     max-width: 294px !important;
@@ -216,7 +219,7 @@ p {
 .driver-main-detail-descri {
     padding-top: 80px;
     display: flex;
-    gap: 218px;
+    gap: 68px;
     align-items: center;
 }
 .decri-color-bx {
@@ -248,7 +251,7 @@ p {
 }
 .dri-decri {
     width: 100%;
-    max-width: 456px;
+    max-width: 600px;
 }
 .dri-decri p {
     font-family: Poppins;
@@ -258,12 +261,13 @@ p {
     letter-spacing: 0em;
     text-align: left;
     color: #556987;
-    max-width: 455px;
+    /* max-width: 455px; */
     padding-left: 80px;
 }
 
 .dri-images {
     position: relative;
+    margin: 0 auto;
 }
 .dri-images img {
     width: 100%;
@@ -318,12 +322,41 @@ p {
 }
 .how-it-detail {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 39px;
-    gap: 60px;
+    /* flex-wrap: wrap; */
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    padding-top: 42px;
+    gap: 140px;
     transition: transform 0.3s ease;
+}
+.comp-tabs .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: transparent !important;
+    color: rgba(47, 61, 134, 1);
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    border-bottom:  3px solid rgba(47, 61, 134, 1);
+    border-radius: 0 !important;
+
+}
+.hid{
+    display: none;
+}
+.comp-tabs .nav-link{
+    padding: .7rem .2rem;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(86, 86, 86, 1);
+}
+.comp-tabs .nav{
+    gap: 40px   ;
 }
 .hw-it-crd1 {
     padding: 24px 24px 40px 24px;
@@ -383,7 +416,7 @@ p {
 }
 .cards-sector {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 50px;
 }
 /* .tras-image {
@@ -418,7 +451,7 @@ p {
     width: 148px;
     height: 90px;
     bottom: 40px;
-    right: -110px;
+    right: -10px;
     z-index: -1 ;
 }
 .fre-ask-question-section {
@@ -819,6 +852,13 @@ p {
     left: 5%;
     right: 5%;
   }
+.comp-tabs{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
 
 
 
@@ -851,6 +891,13 @@ p {
         display: none;
     }
 }
+@media screen and (max-width: 1143px) {
+    .how-it-detail{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
 @media screen and (max-width: 1000px) {
     .driver-main-detail-descri {
         flex-wrap: wrap;
@@ -869,6 +916,9 @@ p {
 @media screen and (max-width: 992px) {
     .main-nav #nav-toggler {
         display: block;
+    }
+    .cards-sector{
+        flex-wrap: wrap;
     }
     .main-nav .nav-items {
         flex-direction: column;
@@ -946,9 +996,13 @@ p {
     }
 }
 @media screen and (max-width: 500px) {
-    .hero-sec-main-title {
+    /* .hero-sec-main-title {
         max-width: 332px;
+    } */
+    .how-it-detail{
+        gap: 50px;
     }
+
     .hero-sec-main-title h1 {
         font-family: Poppins;
         font-size: 24px;
@@ -1095,6 +1149,7 @@ p {
     .how-it-work-section {
         padding-top: 60px;
         padding-bottom: 40px;
+        background-position: bottom;
     }
     .cards-sector {
         gap: 36px;
@@ -1192,7 +1247,7 @@ p {
         max-width: 147px !important;
     }
     .how-it-mobile-view {
-        display: flex;
+        /* display: flex; */
         justify-content: center;
         text-align: center;
         margin: 0 auto;
