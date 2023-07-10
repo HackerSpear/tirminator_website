@@ -18,7 +18,7 @@
 
   <!----------------------- CSS ------------------------------->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
+  <!-- <link rel="stylesheet" href="./send-mail.php"> -->
   <title>TIRminator</title>
 </head>
 <body>
@@ -379,7 +379,7 @@
 
             </div>
             <div class="cont-sub-btn ">
-              <button class="fm-sub-btn" type="submit">Send</button>
+              <button class="fm-sub-btn" type="submit" onclick="sendData()">Send</button>
             </div>
           </form>
         </div>
@@ -408,16 +408,17 @@
       <div class="footer-bar">
         <div class="footer-bar-address">
           <h2>Address</h2>
-          <p>Level 1, 12 Sample St, Sydney NSW 2000</p>
+          <p>Strada Vasile Loichita, Timisoara, Romania</p>
         </div>
         <div class="footer-bar-title">
+          <a href="privacy-policy.html">Privacy Policy</a>
           <p>©2023, All right reserved.</p>
         </div>
         <div class="footer-bar-contact">
           <h2>Contact</h2>
-          <p class="f-bar-detail"><img src="./assets/images/footer-bar-mail.svg" alt="footer-bar-mail">Info@example.com
+          <p class="f-bar-detail"><img src="./assets/images/footer-bar-mail.svg" alt="footer-bar-mail">Contact@Tirminator.com
           </p>
-          <p class="f-bar-detail"><img src="./assets/images/footer-bar-call.svg" alt="footer-bar-call">(270) 555-0117
+          <p class="f-bar-detail"><img src="./assets/images/footer-bar-call.svg" alt="footer-bar-call">0040729798960
           </p>
         </div>
       </div>
@@ -449,7 +450,7 @@
   <!------------------------------- Custom Js ---------------------------------->
   <script  src="./assets/js/script.js"></script>
   <!------------------------------ Custom Js Ends --------------------->
-
+  <!-- <script src="./sendMail.php"></script> -->
   <!-- ******************************Scripts End Here******************************-->
 
   <script>
@@ -466,9 +467,48 @@ $(document).ready(function() {
 });
 
 
-
-
   </script>
+
+<script>  const form = document.getElementById("email");
+  form.addEventListener("submit",(e)=>e.preventDefault())
+  function sendData() {
+  
+      // Get form input values
+      var email = document.getElementById("email").value;
+      var name = document.getElementById("name").value;
+      var subject = document.getElementById("subject").value;
+      // Create data object
+      var data = {
+        name: name,
+          email: email,
+          description: subject,
+      };
+      // Send data to backend (replace 'your_backend_url' with the actual backend endpoint)
+      fetch('https://dev.tirminator.com/website/send-email', {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data)
+      })
+      .then(response => {
+          if (response.ok) {
+              console.log('Data sent successfully');
+              // Do something here after successful data submission
+
+          } else {
+              console.log('Error:', response.statusText);
+              // Handle error cases here
+          }
+      })
+      .catch(error => {
+          console.error('Error:', error);
+          // Handle error cases here
+      });
+  }
+</script>
+
+
 
 </body>
 
