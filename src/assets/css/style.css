@@ -45,7 +45,103 @@ p {
 .w-249 {
     max-width: 294px !important;
 }
+.switcher .select2-container--default .select2-selection--single {
+    background-color: white;
+}
+.select2-container--default .select2-results>.select2-results__options{
+    scrollbar-color: #888 #f1f1f1;
+  scrollbar-width: thin;
+}
 
+.select2-container--default .select2-results>.select2-results__options::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+.select2-container--default .select2-results>.select2-results__options::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+
+.select2-container--default .select2-results>.select2-results__options::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  .select2-container--default .select2-results__option[aria-selected="true"] {
+    background-color:  transparent;
+  }
+  /* ----------------select-box-------- */
+.all-country-code .select2-container {
+    max-height: 200px;
+    overflow-y: none;
+  }
+.select2-container--default .select2-search--dropdown .select2-search__field {
+    display: none;
+}
+.all-country-code{
+    display: flex;
+    gap: 17px;
+    width: 100%;
+    height: 44px;
+}
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: #EBEFFF;
+    padding: 12px 12px 12px 16px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344054;
+}
+.select2-results__option[aria-selected] {
+    padding: 12px 12px 12px 16px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344054;
+}
+.select2-container {
+    width: 73px !important;
+    z-index: 100000;
+    border: none;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    /* height: 44px; */
+    background-image: url(../images/dropdown-Icon.svg);
+    background-repeat: no-repeat;
+    top: 18px;
+}
+.select2-container--default .select2-selection--single {
+    background-color: #fff;
+    border: transparent;
+    border-radius: 4px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5F5F5F;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b,
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b
+ {
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 4px 0 4px;
+    height: 0;
+    left: 50%;
+    margin-left: -4px;
+    margin-top: -2px;
+    position: absolute;
+    top: 50%;
+    width: 0;
+  
+}
 /*------------------------------------- *********** Section 1 ********** ------------------------------*/
 .ext-stl {
     width: 100%;
