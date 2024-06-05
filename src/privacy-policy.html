@@ -7,6 +7,8 @@
   <meta name="description" content="Add some description here.">
   <meta name="title" content="Add meta title hee.">
   <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+
   <!---------------------- Bootstrap Cdn---------------------->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -21,118 +23,278 @@
 
   <title>Privacy_Policy</title>
 </head>
+
 <body>
   <!-- <div id="loader"></div> -->
-  <section class="main-nav"> 
+  <section class="main-nav" style="min-height: 80px;display: flex;align-items: center;">
     <div class="container">
-      <navbar class="navbar">
 
-        <div class="logo">
-          <a href="index.html"><img src="assets/images/nav-logo.svg" alt="logo image"></a>
-        </div>
-
-        <div class="ext-stl">
-          <!-- <div class="nav-items con lue circleBehind">
-            <a href="#feacture-section" class="nav-link btn-111">Features</a>
-            <a href="#fre-ask-question-section" class="nav-link btn-111">FAQ’s</a>
-            <a href="#how-it-work-section" class="nav-link btn-111">How it works</a>
-          </div>
+      <header class="header">
+        <div class="d-flex justify-content-between">
           <div>
-            <a class="nav-cont-btn" href="#contact-us-section">Contact
-              Us</a>
-          </div> -->
+            <a class="logo" href="index.html">
+              <a href="index.html"><img src="assets/images/nav-logo.svg" alt="logo image"></a>
+            </a>
+          </div>
 
+          <div class="nav-items">
+            <div class="switcher">
+              <select class="select2 language_toggle">
+                <option selected value="en">EN</option>
+                <option value="cz">RN</option>
+              </select>
+            </div>
+            <!-- <a href="#" class="contect-us-btn" data-localize="contect-us-b">Contact Us</a> -->
+          </div>
         </div>
-        <img id="nav-toggler" src="./assets/images/hamburger.svg" alt="">
-      </navbar>
+
+
+      </header>
+      <!-- <div class="ext-stl"> -->
     </div>
   </section>
+  </navbar>
+
   <section class="privacy-policy-section pt-80 contan">
     <div class="container">
-        <div class="privacypolicy-main">
-            <h1>1. Privacy Policies</h1>
-            <p class="pt-5">Privacy Policy for TIRminator Mobile Application</p>
-            <p class="pt-5">Effective Date:</p>
-            <p class="pt-3">This Privacy Policy describes how <b style="color: rgba(19, 36, 118, 1);">“TIRminator”,</b> collects, uses, and discloses personal information when you use our Android mobile application for hiring truck drivers in the European region. We are committed to protecting your privacy and ensuring the security of your personal information. By using our App, you agree to the collection and use of your personal information as outlined in this Policy.</p>
+      <div class="privacypolicy-main">
+        <h1 data-localize="heading-1">1. GENERAL PROVISIONS</h1>
+        <p class="pt-5" data-localize="text-1">The general terms and conditions govern access to the Tirminator
+          application and represent the
+          contract to which the User consents and accepts in its entirety. By using the application, the User gives
+          their consent that they accept the present "Terms and Conditions." SC Logistic Mango Rm S.R.L., hereinafter
+          referred to as "the Company," may revise this document at any time by updating this page. We recommend
+          visiting this page periodically to read the "Terms and Conditions" as this document is legally binding.
+          Continued use of the application constitutes acceptance of changes made to this contract.
 
-            <div>
-                <h2 class="pt-5">2. Information We Collect</h2>
-                <h3 class="pt-4">2.1 Personal Information from Company Representatives:</h3>
-                <p class="pt-2">When a company representative creates a company profile on our App, we may collect the following personal information:</p>
-                <ul class="pt-4">
-                    <li><p><span>Name and Contact Details:</span> We collect your name, email address, and phone number to identify and communicate with you effectively</li></p>
-                    <li class="pt-1"><p><span>Company Information: </span>  We collect information about your company, including its name, address, industry, and other details necessary to create and manage the company profile.</li></p>
-                    <li class="pt-1"><p><span>User Preferences and Settings: </span> We may collect information about your preferences and settings within the App to provide a personalized experience.</li></p>
-                </ul>
-            </div>
+          After creating the Account, using the content signifies acceptance of the changes made to the application's
+          Terms and Conditions and/or the updated versions of the Terms and Conditions.
 
-            <div>
-                <!-- <h2 class="pt-5">2.Information We Collect</h2> -->
-                <h3 class="pt-4">2.2 Personal Information from Truck Drivers:</h3>
-                <p class="pt-2">When a truck driver creates a profile to search for job opportunities, we may collect the following personal information:</p>
-                <ul class="pt-4">
-                    <li><p><span>Name and Contact Details:</span> We collect your name, email address, and phone number to identify and communicate with you effectively</li></p>
-                    <li class="pt-1"><p><span>Employment History and Qualifications: </span>  We collect information about your employment history, qualifications, and relevant experience to assess your eligibility for job opportunities and facilitate the hiring process.</li></p>
-                    <li class="pt-1"><p><span>Driving License and Certifications:  </span> We may collect information about your driving license, certifications, and other necessary documents to verify your qualifications as a truck driver.</li></p>
-                    <li class="pt-1"><p><span>User Preferences and Settings:  </span> We may collect information about your preferences and settings within the App to provide a personalized experience and match you with relevant job opportunities.</li></p>
-                </ul>
-            </div>
+          Right of Revocation: We inform users that they have the right to revoke their consent for the processing of
+          their personal data in accordance with the applicable legislation.</p>
 
-            <div>
-                <h2 class="pt-5">3. Use of Personal Information</h2>
-                <h3 class="pt-4">3.1 Company Representatives:</h3>
-                <p class="pt-2">We may use the personal information provided by company representatives for the following purposes:</p>
-                <ul class="pt-4">
-                    <li><p><span>Creating and Managing Company Profiles: </span>We use your information to create and manage company profiles, allowing you to post job opportunities and communicate with truck drivers.</li></p>
-                    <li class="pt-1"><p><span>Facilitating Communication:  </span>  We may use your personal information to facilitate communication between you and truck drivers who express interest in your job opportunities.</li></p>
-                    <li class="pt-1"><p><span>Customer Support:   </span> We may use your information to provide customer support and address any inquiries or concerns you may have.</li></p>
-                    <li class="pt-1"><p><span>Sending Updates and Notifications:   </span>  We may use your contact details to send you relevant updates, notifications, or promotional materials related to our services.</li></p>
-                </ul>
-                <h3 class="pt-4">3.2 Truck Drivers:</h3>
-                <p class="pt-2">We may use the personal information provided by truck drivers for the following purposes:</p>
-                <ul class="pt-4">
-                    <li><p><span>Creating and Managing Driver Profiles:  </span>We use your information to create and manage driver profiles, allowing you to search for job opportunities and communicate with hiring companies.</li></p>
-                    <li class="pt-1"><p><span>Matching Drivers with Job Opportunities:  </span> We may use your personal information, such as employment history and qualifications, to match you with relevant job opportunities that align with your skills and preferences.</li></p>
-                    <li class="pt-1"><p><span>Facilitating Communication:   </span> We may use your personal information to facilitate communication between you and hiring companies for job-related purposes.</li></p>
-                    <li class="pt-1"><p><span>Sending Job-Related Updates and Notifications:   </span> We may use your contact details to send you updates, notifications, or promotional materials related to job opportunities or our services.</li></p>
-                </ul>
-            </div>
+        <div>
+          <h2 class="pt-5" data-localize="heading-2">2. DEFINITIONS</h2>
+          <p class="pt-5" data-localize="text-2">
+            Company = Logistic Mango Rm S.R.L., Registration Number in R.C.: J35/2129/2020, CUI: 42880296.
+            <br />User: any natural or legal person who holds an account on the application.<br />
+            Application: the Tirminator application, which is the exclusive property of the Company.<br />
+            Account: the account created by natural or legal persons on the application.<br />
+            Contract: represents the present document to which the User has consented by accessing the Site. The
+            contract is considered concluded between the Company and the User at the time of downloading the Application
+            and creating the Account.<br />
 
-            <div>
-                <h2 class="pt-5">4.	Disclosure of Personal Information</h2>
-                <h3 class="pt-4">4.1 Company Representatives:</h3>
-                <p class="pt-2">We may disclose the personal information of company representatives in the following circumstances:</p>
-                <ul class="pt-4">
-                    <li><p><span>Truck Drivers and Hiring Companies: </span> We may disclose your personal information to truck drivers and hiring companies for job-related purposes, such as facilitating communication and assessing eligibility for job opportunities.</li></p>
-                    <li class="pt-1"><p><span>Third-Party Service Providers:  </span> We may disclose your personal information to third-party service providers who assist us in App operations, such as hosting, payment processing, data analysis, or customer support. These service providers are contractually bound to handle your information securely and only for the purposes specified by us.</li></p>
-                    <li class="pt-1"><p><span>Legal and Regulatory Authorities:   </span> We may disclose your personal information if required or permitted by law, such as to comply with a legal obligation, protect our rights or the safety of others, or respond to lawful requests from public authorities.</li></p>
-                    
-                </ul>
-                <h3 class="pt-4">4.2 Truck Drivers:</h3>
-                <p class="pt-2">We may disclose the personal information of truck drivers in the following circumstances:</p>
-                <ul class="pt-4">
-                    <li><p><span>Hiring Companies:  </span> We may disclose your personal information to company representatives and hiring companies for job-related purposes, such as facilitating communication and assessing eligibility for job opportunities.</li></p>
-                    <li class="pt-1"><p><span>Third-Party Service Providers:  </span> We may disclose your personal information to third-party service providers who assist us in App operations, such as hosting, payment processing, data analysis, or customer support. These service providers are contractually bound to handle your information securely and only for the purposes specified by us.</li></p>
-                    <li class="pt-1"><p><span>Legal and Regulatory Authorities:    </span> We may disclose your personal information if required or permitted by law, such as to comply with a legal obligation, protect our rights or the safety of others, or respond to lawful requests from public authorities.</li></p>
-                    
-                </ul>
-            </div>
-            <div>
-                <h3>Data Security</h3>
-                <p>We are committed to protecting the security of your personal information and have implemented reasonable technical and organizational measures to safeguard it. We maintain appropriate safeguards to protect against unauthorized access, disclosure, alteration, or destruction of your personal information. However, please note that no method of transmission over the Internet or electronic storage is 100% secure, and we cannot guarantee absolute security.</p>
-                <h3>Data Retention</h3>
-                <p>We retain personal information for as long as necessary to fulfill the purposes outlined in this Policy unless a longer retention period is required or permitted by law. The retention period may vary depending on the nature of the information and the legal requirements applicable to us.</p>
-                <h3>Legal Rights</h3>
-                <p>If you are a user located in the European Economic Area (EEA) or other applicable jurisdictions, you may have certain rights under data protection laws. These rights may include the right to access, correct, or delete your personal information, as well as the right to restrict or object to certain processing activities. If you wish to exercise any of these rights, please contact us using the details provided below. We will respond to your request in accordance with applicable laws.</p>
-                <h3>Changes to this Privacy Policy</h3>
-                <p>We may update this Privacy Policy from time to time to reflect changes in our practices or legal obligations. We will notify you of any material changes through the App or via email. By continuing to use the App after such notice, you agree to be bound by the revised Privacy Policy.</p>
-                <h3>Contact Us</h3>
-                <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us. We will endeavor to address your inquiries and concerns promptly and in accordance with applicable privacy laws.</p>
-                <p class="pt-5">Please note that this Privacy Policy applies solely to our Android mobile application for hiring truck drivers and does not govern the privacy practices of any other websites, platforms, or services that may be linked to or integrated within the App.</p>
-
-            </div>
+            Copyright and Trademark: All trademarks, logos, and content of the application are the exclusive property of
+            the Company. Users are granted only the right to use the application according to the terms and conditions.
+            Communications and Notifications: Any communication or notification sent by the Company to users will be
+            considered received by the users after its dispatch..
+          </p>
 
         </div>
+
+        <div>
+          <h3 class="pt-4" data-localize="heading-3">DESCRIPTION OF SERVICES
+          </h3>
+          <p class="pt-5" data-localize="text-3">The services offered by the Application are intended for:<br />
+            (i) Users, natural persons, qualified as drivers in the transportation sector, who download the application
+            and can upload their personal data, professional experience, and details about obtained certificates to
+            their personal account.<br />
+            (ii) Users, legal entities, or authorized individuals who want to post job advertisements.
+            The User expressly agrees to comply with all clauses of this set of terms and conditions, as well as any
+            other specific terms and conditions applicable to the services.<br />
+            Job advertisements can be displayed on the Application for a specified period. The advertisements can be
+            valid for 2 weeks, with the possibility of extension by reactivating the published ad through the Account.
+            The legal entity User assumes responsibility for the use of personal data entered by the legal entity user
+            during the hiring process.<br />
+            The User is solely responsible for the content published on the Application. Therefore, postings and message
+            transmissions through the Application are actions subject to the following conditions and limitations:
+            Job advertisements must be complete, containing all information or conditions related to the advertisement.
+            You may not publish, transmit, or refer in any way to messages containing illegal, threatening, abusive,
+            indecent, discriminatory texts, or those that infringe upon the rights of third parties or legal provisions.
+            You may not publish materials that contradict any other provisions of this set of Terms and Conditions, and
+            the Company may, at its discretion, remove them from the Application without any explanation.</p>
+
+        </div>
+
+        <div>
+          <h3 class="pt-5" data-localize="heading-4">ACCOUNT CREATION, RESPONSIBILITIES
+
+          </h3>
+          <p class="pt-5" data-localize="text-4">To benefit from all the Services offered by the Application, Users must create an account
+            after downloading the application by completing the forms available in the "NEW ACCOUNT" section interface.
+            The User account is created by entering the phone number or email address and creating a password. By
+            entering the phone number or email address, the User consents to the processing of this information by the
+            Company.
+            The Company is not obligated to pre-verify materials published by Users. The Company is not responsible in
+            any way for the information and data posted, disseminated, or transmitted by its Users.
+            To use the Services offered by the Application, the User assumes responsibility for providing accurate and
+            complete data, and the Company is not liable for the truthfulness and accuracy of the information posted by
+            Users.
+            The User must consider that the contact details (name, email, phone, address) entered on the Application
+            will be available to legal entity Users who publish job advertisements, these being used in the recruitment
+            process. Given the legitimacy of the purpose, by accepting these terms and conditions, you agree to receive
+            SMS messages as part of the application/recruitment process.
+            The Company does not confirm the identity of Users. Since the Company cannot be involved in user-to-user
+            relationships or control the behavior of Users, in the event of a dispute with one or more Users, the
+            Company (through its agents, administrators, and employees) is absolved of any liability or compensation
+            (direct or indirect) of any kind and nature, known or unknown, suspected or not, disclosed or not, arising
+            in any way related to the disputes.</p>
+
+          <h3 class="pt-4" data-localize="heading-5">SERVICE EVALUATION</h3>
+          <p class="pt-5" data-localize="text-5">1. Evaluation by Individual Users<br />
+            Individual users, as drivers, have the opportunity to evaluate the transport companies that have employed
+            them through the application. In this regard, the questions that employees answer are:<br />
+            - To what extent were you satisfied with the working conditions provided by the transport company, including
+            the condition of the vehicles and related equipment?<br />
+            - How do you rate the company's reliability in terms of paying drivers according to the agreement?<br />
+            - To what extent are you satisfied with how the dispatchers cooperate with the drivers and respect the work
+            schedule?<br />
+
+            2. Evaluation by Legal Entity Users Regarding the Services Provided<br />
+            On the other hand, transport companies have the opportunity to evaluate the drivers employed through the
+            application. In this context, the questions that companies answer are:<br />
+            - How do you evaluate the driver's level of experience and technical skills in the field of road
+            transport?<br />
+            - To what extent are you satisfied with the driver, considering the absence of major incidents such as theft
+            (goods, fuel, etc.), truck abandonment, illegal trafficking, or accidents that could have affected the
+            collaboration with the company?<br />
+            - To what extent are you satisfied with the driver's collaboration with dispatchers and adherence to the
+            work schedule?<br />
+
+            RESPONSIBILITIES AND LIABILITY FOR SERVICE EVALUATIONS<br />
+
+            Logistic Mango Rm S.R.L. cannot be held responsible for the evaluations received from users, whether they
+            are drivers or companies. The evaluations reflect the personal opinion and experience of the users and do
+            not imply any commitment or guarantee from the Company regarding the truthfulness or accuracy of the
+            information provided.<br />
+
+            Additionally, the Company cannot be held responsible for any disputes or litigation that may arise between
+            drivers and companies as a result of the evaluations posted on the platform. Any dispute or litigation
+            between Users is their exclusive responsibility, and the Company is absolved of any liability or
+            compensation (direct or indirect) of any kind and nature, known or unknown, suspected or not, disclosed or
+            not, arising in any way related to disputes.<br />
+
+            In conclusion, by using the Tirminator application, Users fully assume responsibility for the content of the
+            posted evaluations and for any consequences that may arise as a result of these evaluations. Logistic Mango
+            Rm S.R.L. only provides the platform for communication between Users and has no responsibility for the
+            content or consequences of the posted evaluations.<br /></p>
+
+        </div>
+
+        <div>
+          <h3 class="pt-4" data-localize="heading-6">ACCESS TO THE APPLICATION</h3>
+          <p class="pt-5" data-localize="text-6">Access to some Services provided to Users is free.
+            The account of an individual User can be accessed by a legal entity User or an authorized individual. The
+            legal entity User is responsible for collecting personal data from individuals, particularly for informing
+            and obtaining consent (or identifying another legitimate basis) for transmitting personal data to the
+            Company for such communications.
+            The Company is a communication platform between Users, who are responsible for the content published on the
+            Application.
+            The Company reserves the right (which can be exercised at any chosen time and without prior notice) to
+            delete, move, or edit these messages or to restrict some Users' access to one of its communication
+            platforms. These measures may be taken as a result of Users' failure to comply with legal provisions or the
+            terms and conditions of using the Application.
+            The User is solely responsible for the content published on the Application.</p>
+
+          <h3 class="pt-4" data-localize="heading-7">CHATS AND MESSAGES</h3>
+          <p class="pt-5" data-localize="text-7">The application allows Users to communicate through the chat feature available within the
+            downloaded Application.
+            The Company is not responsible for the truthfulness and accuracy of the information transmitted by Users
+            through the chat section.</p>
+        </div>
+        <div>
+          <h3 class="pt-4" data-localize="heading-8">ACCOUNT PROTECTION</h3>
+          <p class="pt-5" data-localize="text-8">Access to the User account in the Application is protected by a password.
+            The User is responsible for maintaining the confidentiality of their information and password within the
+            Application. Users are accountable for the use of their registration, whether the use is with or without
+            their consent.
+            The Company will not be liable for any moral or material damage caused by the failure to comply with this
+            provision.
+            The Company may also, at any time and without explanation, interrupt the provision of services, or any part
+            of them, with or without prior notice.</p>
+          <h3 class="pt-4" data-localize="heading-9">INTELLECTUAL PROPERTY RIGHTS</h3>
+           <p class="pt-5" data-localize="text-9">The content and design of the Application, as well as any other material related to the Application sent to
+            the User, belong to the Company, regardless of whether the author is specified or not, and are protected by
+            intellectual property legislation.
+            You may not use, reproduce, or allow anyone to use or reproduce the materials without obtaining written
+            permission from the Company or its collaborators who hold intellectual property rights over the respective
+            content section of the Application. Additionally, it is forbidden to reproduce, in any form, in whole or in
+            part, the information contained in User accounts and the recruitment advertisements of legal entities or
+            authorized individuals without prior written consent from the Company.
+            Except as stated above, the content of the Application may not be reproduced, modified, or exploited,
+            regardless of the commercial or non-commercial purpose of such exploitation.
+            The following actions are not permitted without obtaining prior written permission from the Company:
+            a. reproducing or storing the content, as well as sending this content to any other site.
+            b. modifying, publishing, transmitting, as well as participating in the transfer, sale, distribution of
+            materials made by reproducing, modifying, or displaying the content, without obtaining prior written
+            permission from us.
+            c. removing marks that signify the Application's copyright over the content.
+          </p>
+          <h3 class="pt-4" data-localize="heading-10">CONFIDENTIALITY OF APPLICATION INFORMATION
+          </h3>
+           <p class="pt-5" data-localize="text-10">The Company will maintain the confidentiality of any information provided by the User. Disclosure of the
+            information provided will only be made under the conditions mentioned in this Contract.
+            By transmitting information or materials through the Application, the User grants the Company unrestricted
+            and irrevocable access to them, as well as the right to use, reproduce, display, modify, transmit, and
+            distribute these materials or information.
+            Legal entity users who post job advertisements act as personal data operators in accordance with applicable
+            legislation, and as such, they have a series of rights and obligations concerning the personal data of
+            individual Users accessed through the Application.
+            When using the services offered through the Application, Users who post job advertisements accept and agree
+            to comply with the terms and conditions stipulated in the personal data processing agreement, which is an
+            integral part of this set of terms and conditions.
+            The Company reserves the right to periodically update and modify the Terms and Conditions of the Application
+            to reflect operational updates or any other changes in legal requirements. The document is binding on the
+            User from the moment it is displayed in the application.</p>
+          <h3 class="pt-4" data-localize="heading-11">DATA PRIVACY POLICY</h3>
+           <p class="pt-5" data-localize="text-11">The Company processes a range of personal data of Users, both individual Users and legal entity Users
+            (i.e., representatives), when using the Application.
+
+            This privacy policy describes the types of personal data that are processed, how they are used, what options
+            are available regarding these processes, and how the Company will respect your rights as a data subject
+            under personal data protection legislation, including Regulation (EU) 2016/679 ("GDPR").
+            The Company is the controller of personal data, according to personal data protection legislation including
+            GDPR, regarding the personal data of Users collected and processed through the Application.
+            The Company processes the following categories of personal data:
+            - Name, surname, phone number/email address, company data, professional experience data, photographs of
+            personal documents, and skills.
+            We retain personal data as long as necessary to fulfill the purposes for which they were collected, in
+            compliance with our internal data retention procedures, including applicable archiving rules.
+            Generally, Users' data are retained as long as they have a User account in the Application.</p>
+          <h3 class="pt-4" data-localize="heading-12">
+            FORCE MAJEURE
+          </h3>
+           <p class="pt-5" data-localize="text-12">
+            Neither party will be liable for the non-performance of its contractual obligations if such non-performance,
+            whether timely and/or proper, in whole or in part, is due to an event of force majeure.
+            Force majeure is an unforeseeable event beyond the control of the parties and cannot be avoided.
+            If, within 15 (fifteen) days from the date of its occurrence, the respective event does not cease, each
+            party will have the right to notify the other party of the termination of the contract by operation of law,
+            without either party being able to claim any damages from the other.
+          </p>
+          <h3 class="pt-4" data-localize="heading-13">
+            APPLICABLE LAW – JURISDICTION. AMICABLE DISPUTE RESOLUTION
+          </h3>
+           <p class="pt-5" data-localize="text-13">
+            These Terms and Conditions are subject to Romanian law. In the event of any disputes arising between the
+            Company and the User, an attempt will first be made to resolve them amicably. This chapter and the procedure
+            below demonstrate the Company's willingness to resolve complaints, claims, and disputes quickly,
+            efficiently, amicably, alternatively, and extra-judicially, using all applicable legal mechanisms and
+            measures in Romania.
+            If an amicable resolution of disagreements is not possible, the disputes will be resolved by the competent
+            courts of Romania.
+          </p>
+          <h3 class="pt-4" data-localize="heading-14">
+
+            FINAL PROVISIONS
+          </h3>
+           <p class="pt-5" data-localize="text-14">
+            If, for any reason, any clause in these Terms and Conditions is found to be null, unenforceable, or invalid,
+            it will be replaced with a valid clause that is as close in meaning as possible to the original clause.
+          </p>
+        </div>
+
+      </div>
     </div>
   </section>
 
@@ -142,10 +304,10 @@
       <div class="main-footer">
         <a href="index.html"><img class="footer-logo" src="./assets/images/footer-logo.png" alt="footer-logo"></a>
         <!-- <div class="nav-items footer-items ">
-          <a href="#feacture-section" class="nav-link">Features</a>
-          <a href="#fre-ask-question-section" class="nav-link">FAQ’s</a>
-          <a href="#how-it-work-section" class="nav-link">How it works</a>
-        </div> -->
+<a href="#feacture-section" class="nav-link">Features</a>
+<a href="#fre-ask-question-section" class="nav-link">FAQ’s</a>
+<a href="#how-it-work-section" class="nav-link">How it works</a>
+</div> -->
         <div class="footer-social-icon">
           <a href="https://www.facebook.com"><img src="./assets/images/Facebook.svg" alt="footer-Facebook"></a>
           <a href="https://www.Instagram.com"><img src="./assets/images/Instagram.svg" alt="footer-Instagram"></a>
@@ -166,7 +328,8 @@
         </div>
         <div class="footer-bar-contact">
           <h2>Contact</h2>
-          <p class="f-bar-detail"><img src="./assets/images/footer-bar-mail.svg" alt="footer-bar-mail">Contact@Tirminator.com
+          <p class="f-bar-detail"><img src="./assets/images/footer-bar-mail.svg"
+              alt="footer-bar-mail">Contact@Tirminator.com
           </p>
           <p class="f-bar-detail"><img src="./assets/images/footer-bar-call.svg" alt="footer-bar-call">0040729798960
           </p>
@@ -175,54 +338,53 @@
     </div>
   </section>
 
-
-
-
-
-
-
-
-
-
-  
   <!-- ************************Scripts Start Here*********************************-->
-
   <!--------------------------------- Jquery --------------------------->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-------------------------------- Jquery Ends------------------------------->
-
   <!--------------------------------- Popper Js ------------------------------->
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
     crossorigin="anonymous"></script>
   <!--------------------------------- Popper Js Ends----------------------------->
-
   <!--------------------------------- Bootstrap 5 cdn ---------------------------->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
   <!------------------------------------ Bootstrap 5 cdn Ends--------------------->
-
+  <!-- select-2 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+  <!-- form-validation JS -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+  <!-- form-validation JS Ends -->
+  <!-- Jquery Localize -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-localize/0.1.0/jquery.localize.min.js"
+    integrity="sha512-4ey3vzy6yNVmhaSgtKPZvOmm2AlfN6AWRxHWBsYGEtYIpuVEbXc5ZpoVPKMSkdRkgkb/TnlnpJCry6uPoCKCsQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-localize/0.1.0/jquery.localize.js"
+    integrity="sha512-8cFOrybNSH+nRZ56bLnTW0ABP/qpx45QRZwuIvgjjQCIRVsEKDaqLtuq9QY5cJjlAz376K10rgHy/gc667K9NA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Jquery Localize Ends -->
   <!------------------------------- Custom Js ---------------------------------->
-  <script  src="./assets/js/script.js"></script>
+  <script src="./assets/js/script.js"></script>
   <!------------------------------ Custom Js Ends --------------------->
 
   <!-- ******************************Scripts End Here******************************-->
 
   <script>
-$(document).ready(function() {
-  $('#pills-home-tab.nav-link').on('click', function() {
-    $('.sho').show();
-    $('.hid').hide();
-  });
+    $(document).ready(function () {
+      $('#pills-home-tab.nav-link').on('click', function () {
+        $('.sho').show();
+        $('.hid').hide();
+      });
 
-  $('#pills-profile-tab.nav-link').on('click', function() {
-    $('.sho').hide();
-    $('.hid').show();
-  });
-});
+      $('#pills-profile-tab.nav-link').on('click', function () {
+        $('.sho').hide();
+        $('.hid').show();
+      });
+    });
 
 
 
