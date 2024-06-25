@@ -38,6 +38,10 @@ p {
 .pt-50 {
     padding-top: 50px;
 }
+.logo img {
+    height: 40px;
+    width: 186px;
+  }
 .mx-615 {
     width: 100%;
     max-width: 450px;
