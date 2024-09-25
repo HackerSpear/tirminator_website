@@ -1,4 +1,3 @@
-# Use a Debian-based image
 FROM debian:buster
 
 # Install Nginx and PHP 8.1 dependencies
