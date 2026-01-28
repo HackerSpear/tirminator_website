@@ -118,19 +118,7 @@ export function getWebApplicationSchema() {
   }
 }
 
-export function renderSchemaTags() {
-  const organization = getOrganizationSchema()
-  const webApp = getWebApplicationSchema()
-  return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(organization) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(webApp) }}
-      />
-    </>
-  )
+/** Returns [organization, webApp] schema objects for JSON-LD. Render in layout with script tags. */
+export function getSchemaScriptsData(): object[] {
+  return [getOrganizationSchema(), getWebApplicationSchema()]
 }

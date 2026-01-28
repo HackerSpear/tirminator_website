@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next'
-import { getSEOTags, renderSchemaTags } from '@/lib/seo'
+import { getSEOTags, getSchemaScriptsData } from '@/lib/seo'
 import './globals.css'
 
 export const metadata: Metadata = getSEOTags({
@@ -44,7 +44,13 @@ export default function RootLayout({
         />
       </head>
       <body>
-        {renderSchemaTags()}
+        {getSchemaScriptsData().map((schema, i) => (
+          <script
+            key={i}
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+          />
+        ))}
         {children}
       </body>
     </html>
