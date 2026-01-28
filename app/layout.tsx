@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from 'next'
+import { Analytics } from '@vercel/analytics/next'
 import { getSEOTags, getSchemaScriptsData } from '@/lib/seo'
 import './globals.css'
 
@@ -52,6 +53,7 @@ export default function RootLayout({
           />
         ))}
         {children}
+        <Analytics />
       </body>
     </html>
   )
