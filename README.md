@@ -111,4 +111,4 @@ This project was migrated from a static HTML/CSS/JS website to Next.js + TypeScr
 
 ## 📄 License
 
-©2023, All rights reserved.
+©2026, All rights reserved.

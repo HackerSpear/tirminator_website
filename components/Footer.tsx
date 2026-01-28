@@ -50,7 +50,7 @@ export default function Footer() {
           <div className="footer-bar-title">
             <Link href="/privacy-policy">Privacy Policy</Link>
             <Link href="/terms-conditions">Terms and Conditions</Link>
-            <p>©2023, All right reserved.</p>
+            <p>©2026, All right reserved.</p>
           </div>
           <div className="footer-bar-contact">
             <h2>Contact</h2>
@@ -70,7 +70,7 @@ export default function Footer() {
                 width={20}
                 height={20}
               />
-              0040729798960
+              +40729798960
             </p>
           </div>
         </div>
