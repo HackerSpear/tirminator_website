@@ -1,9 +1,23 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
+import { getSEOTags, renderSchemaTags } from '@/lib/seo'
 import './globals.css'
 
-export const metadata: Metadata = {
-  title: 'TIRMINATOR',
-  description: 'The ultimate tool empowering transport companies and drivers to thrive in the industry.',
+export const metadata: Metadata = getSEOTags({
+  title: 'TIRMINATOR – Drivers & Transport Companies',
+  description:
+    'TIRMINATOR connects transport companies with drivers. Find jobs, hire drivers, schedule interviews. The ultimate platform for the transport industry.',
+  canonicalUrlRelative: '/',
+  openGraph: {
+    title: 'TIRMINATOR – Drivers & Transport Companies',
+    description:
+      'TIRMINATOR connects transport companies with drivers. Find jobs, hire drivers, schedule interviews.',
+    url: '/',
+  },
+})
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
 }
 
 export default function RootLayout({
@@ -29,7 +43,10 @@ export default function RootLayout({
           referrerPolicy="no-referrer"
         />
       </head>
-      <body>{children}</body>
+      <body>
+        {renderSchemaTags()}
+        {children}
+      </body>
     </html>
   )
 }
